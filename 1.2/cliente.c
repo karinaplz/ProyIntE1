@@ -15,11 +15,12 @@ int main()
     ptid = pvm_parent();
 
     // Enviar mensaje al servidor
-    strcpy(message, "Hola Mundo");
+    strcpy(message, "Tarea UVM");
     pvm_initsend(PvmDataDefault);
     pvm_pkstr(message);
     pvm_send(ptid, MSG_TAG);
-
+    
+    printf("Tarea UVM");
     printf("Mensaje enviado al servidor.\n");
 
     // Finalizar PVM
